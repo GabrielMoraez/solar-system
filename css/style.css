@@ -132,10 +132,10 @@ body {
 }
 
 #mercury.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 22.97088em;
+  height: 22.97088em;
+  margin-top: -11.18544em;
+  margin-left: -11.18544em; 
 }
 
 #mercury .pos,
@@ -160,10 +160,10 @@ body {
 }
 
 #venus.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 23.67868em;
+  height: 23.67868em;
+  margin-top: -11.83934em;
+  margin-left: -11.83934em; 
 }
 
 #venus .pos,
@@ -189,10 +189,10 @@ body {
 }
 
 #earth.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 24.75479em;
+  height: 24.75479em;
+  margin-top: -12.37739em;
+  margin-left: -12.37739em;
 }
 
 #earth .pos,
@@ -218,10 +218,10 @@ body {
 }
 
 #mars.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 26.79178em;
+  height: 26.79178em;
+  margin-top: -13.39589em;
+  margin-left: -13.39589em; 
 }
 
 #mars .pos,
@@ -247,10 +247,10 @@ body {
 }
 
 #jupiter.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 41.1021em;
+  height: 41.1021em;
+  margin-top: -20.5510em;
+  margin-left: -20.5510em;
 }
 
 
@@ -277,10 +277,10 @@ body {
 }
 
 #saturn.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 57.95856em;
+  height: 57.95856em;
+  margin-top: -28.97928em;
+  margin-left: -28.97928em;
 }
 
 #saturn .pos,
@@ -308,10 +308,10 @@ body {
 }
 
 #uranus.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 95.50235em;
+  height: 95.50235em;
+  margin-top: -47.75117em;
+  margin-left: -47.75117em; 
 }
 
 #uranus .pos,
@@ -337,10 +337,10 @@ body {
 }
 
 #neptune.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 137.82355em;
+  height: 137.82355em;
+  margin-top: -68.91177em;
+  margin-left: -68.91177em;
 }
 
 #neptune .pos,
@@ -366,10 +366,10 @@ body {
 }
 
 #pluto.orbit {
-  width: 12em;
-  height: 12em;
-  margin-top: -6em;
-  margin-left: -6em;
+  width: 175.32354em;
+  height: 175.32354em;
+  margin-top: -87.66177em;
+  margin-left: -87.66177em;
 }
 
 #pluto .pos,
