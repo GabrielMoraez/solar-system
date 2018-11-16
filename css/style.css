@@ -49,6 +49,7 @@ body {
 }
 
 .universe {
+  font-size: 20%;
   z-index: 1;
   position: absolute;
   overflow: hidden;
