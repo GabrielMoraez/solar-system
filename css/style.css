@@ -104,9 +104,9 @@ body {
 
 .orbit {
   position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   top: 50%;
   left: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   animation-name: orbit;
   animation-iteration-count: infinite;
@@ -136,7 +136,6 @@ body {
 }
 
 #mercury .pos,
-#mercury .planet,
 #mercury.orbit {
   animation-duration: 2.89016s;
 }
@@ -156,7 +155,6 @@ body {
 }
 
 #venus .pos,
-#venus .planet,
 #venus.orbit {
   animation-duration: 7.38237s;
 }
@@ -176,7 +174,6 @@ body {
 }
 
 #earth .pos,
-#earth .planet,
 #earth.orbit {
   animation-duration: 12.00021s;
 }
@@ -196,7 +193,6 @@ body {
 }
 
 #mars .pos,
-#mars .planet,
 #mars.orbit {
   animation-duration: 22.57017s;
 }
@@ -217,7 +213,6 @@ body {
 
 
 #jupiter .pos,
-#jupiter .planet,
 #jupiter.orbit {
   animation-duration: 142.35138s;
 }
@@ -237,7 +232,6 @@ body {
 }
 
 #saturn .pos,
-#saturn .planet,
 #saturn.orbit,
 #saturn .ring {
   animation-duration: 353.36998s;
@@ -259,7 +253,6 @@ body {
 }
 
 #uranus .pos,
-#uranus .planet,
 #uranus.orbit {
   animation-duration: 1008.20215s;
 }
@@ -280,7 +273,6 @@ body {
 }
 
 #neptune .pos,
-#neptune .planet,
 #neptune.orbit {
   animation-duration: 1977.49584s;
 }
@@ -301,7 +293,6 @@ body {
 }
 
 #pluto .pos,
-#pluto .planet,
 #pluto.orbit {
   animation-duration: 2880s;
 }
@@ -327,7 +318,7 @@ body {
 }
 
 #mercury .planet {
-  animation-name: shadow-mercury;
+  animation: shadow-mercury 2.89016s infinite linear, self-rotation 2s infinite linear;
 }
 
 @keyframes shadow-mercury {
@@ -370,7 +361,7 @@ body {
 }
 
 #venus .planet {
-  animation-name: shadow-venus;
+  animation: shadow-venus 7.38237s infinite linear, self-rotation 3s infinite linear;
 }
 
 @keyframes shadow-venus {
@@ -414,7 +405,7 @@ body {
 }
 
 #earth .planet {
-  animation-name: shadow-earth;
+  animation: shadow-earth 12.00021s infinite, self-rotation 2s infinite linear;
 }
 
 @keyframes shadow-earth {
@@ -449,6 +440,7 @@ body {
   }
 }
 
+
 /* Mars */
 
 #mars .pos {
@@ -457,7 +449,7 @@ body {
 }
 
 #mars .planet {
-  animation-name: shadow-mars;
+  animation: shadow-mars 22.57017s infinite linear, self-rotation 5s infinite linear;
 }
 
 @keyframes shadow-mars {
@@ -500,7 +492,7 @@ body {
 }
 
 #jupiter .planet {
-  animation-name: shadow-jupiter;
+  animation: shadow-jupiter 142.35138s infinite linear, self-rotation 20s infinite linear;
 }
 
 @keyframes shadow-jupiter {
@@ -543,7 +535,7 @@ body {
 }
 
 #saturn .planet {
-  animation-name: shadow-saturn;
+  animation: shadow-saturn 353.36998s infinite linear, self-rotation 15s infinite linear;
 }
 
 @keyframes shadow-saturn {
@@ -586,7 +578,7 @@ body {
 }
 
 #uranus .planet {
-  animation-name: shadow-uranus;
+  animation: shadow-uranus 1008.20215s infinite linear, self-rotation 20s infinite linear;
 }
 
 @keyframes shadow-uranus {
@@ -629,7 +621,7 @@ body {
 }
 
 #neptune .planet {
-  animation-name: shadow-neptune;
+  animation: shadow-neptune 1977.49584s infinite linear, self-rotation 20s infinite linear;
 }
 
 @keyframes shadow-neptune {
@@ -674,7 +666,7 @@ body {
 }
 
 #pluto .planet {
-  animation-name: shadow-pluto;
+  animation: shadow-pluto 2880s infinite linear, self-rotation 2s infinite linear;
 }
 
 @keyframes pluto-neptune {
@@ -710,6 +702,16 @@ body {
 }
 
 
+
+/* Self-Rotation */
+@keyframes self-rotation {
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:-5em;
+  }
+}
 
 /* Planets index */
 
@@ -781,40 +783,50 @@ body {
 
 #mercury .planet {
   background-image: url('../img/mercury.jpg');
+  background-repeat: repeat-x;
 }
 
 #venus .planet {
   background-image: url('../img/venus.jpg');
+  background-repeat: repeat-x;
 }
 
 #earth .planet {
   background-image: url('../img/earth.jpg');
+  background-repeat: repeat-x;
 }
 
 #earth .moon {
   background-image: url('../img/moon.jpg');
+  background-repeat: repeat-x;
 }
 
 #mars .planet {
   background-image: url('../img/mars.png');
+  background-repeat: repeat-x;
 }
 
 #jupiter .planet {
   background-image: url('../img/jupiter.jpg');
+  background-repeat: repeat-x;
 }
 
 #saturn .planet {
   background-image: url('../img/saturn.png');
+  background-repeat: repeat-x;
 }
 
 #uranus .planet {
   background-image: url('../img/uranus.png');
+  background-repeat: repeat-x;
 }
 
 #neptune .planet {
   background-image: url('../img/neptune.png');
+  background-repeat: repeat-x;
 }
 
 #pluto .planet {
   background-image: url('../img/pluto.png');
+  background-repeat: repeat-x;
 }
