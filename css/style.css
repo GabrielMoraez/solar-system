@@ -318,7 +318,7 @@ body {
 }
 
 #mercury .planet {
-  animation: shadow-mercury 2.89016s infinite linear, self-rotation 2s infinite linear;
+  animation: shadow-mercury 2.89016s infinite linear, self-rotation 100s infinite linear;
 }
 
 @keyframes shadow-mercury {
@@ -361,7 +361,7 @@ body {
 }
 
 #venus .planet {
-  animation: shadow-venus 7.38237s infinite linear, self-rotation 3s infinite linear;
+  animation: shadow-venus 7.38237s infinite linear, self-rotation 500s infinite linear;
 }
 
 @keyframes shadow-venus {
@@ -405,7 +405,7 @@ body {
 }
 
 #earth .planet {
-  animation: shadow-earth 12.00021s infinite, self-rotation 2s infinite linear;
+  animation: shadow-earth 12.00021s infinite, self-rotation 5s infinite linear;
 }
 
 @keyframes shadow-earth {
@@ -449,7 +449,7 @@ body {
 }
 
 #mars .planet {
-  animation: shadow-mars 22.57017s infinite linear, self-rotation 5s infinite linear;
+  animation: shadow-mars 22.57017s infinite linear, self-rotation 5.3s infinite linear;
 }
 
 @keyframes shadow-mars {
@@ -492,7 +492,7 @@ body {
 }
 
 #jupiter .planet {
-  animation: shadow-jupiter 142.35138s infinite linear, self-rotation 20s infinite linear;
+  animation: shadow-jupiter 142.35138s infinite linear, self-rotation 2.5s infinite linear;
 }
 
 @keyframes shadow-jupiter {
@@ -535,7 +535,7 @@ body {
 }
 
 #saturn .planet {
-  animation: shadow-saturn 353.36998s infinite linear, self-rotation 15s infinite linear;
+  animation: shadow-saturn 353.36998s infinite linear, self-rotation 3s infinite linear;
 }
 
 @keyframes shadow-saturn {
@@ -578,7 +578,7 @@ body {
 }
 
 #uranus .planet {
-  animation: shadow-uranus 1008.20215s infinite linear, self-rotation 20s infinite linear;
+  animation: shadow-uranus 1008.20215s infinite linear, self-rotation 4s infinite linear;
 }
 
 @keyframes shadow-uranus {
@@ -621,7 +621,7 @@ body {
 }
 
 #neptune .planet {
-  animation: shadow-neptune 1977.49584s infinite linear, self-rotation 20s infinite linear;
+  animation: shadow-neptune 1977.49584s infinite linear, self-rotation 30s infinite linear;
 }
 
 @keyframes shadow-neptune {

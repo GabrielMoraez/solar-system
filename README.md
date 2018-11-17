@@ -12,55 +12,55 @@ You can check it running here: https://gabs-solarsystem.herokuapp.com/
 ## Numbers
 
 Mercury: {
-  Rotation: 
+  Rotation: 100s,
   Translation: 2.8s
 }
 
 
 Venus: {
-  Rotation: 
+  Rotation: 500s
   Translation: 7.3s
 }
 
 
 Earth: {
-  Rotation: 
+  Rotation: 5s,
   Translation: 12s
 }
 
 
 Mars: {
-  Rotation: 
+  Rotation: 5.3s,
   Translation: 22.5s
 }
 
 
 Jupiter: {
-  Rotation: 
+  Rotation: 2.5s,
   Translation: 142.3s
 }
 
 
 Saturn: {
-  Rotation: 
+  Rotation: 3s,
   Translation: 353.3s
 }
 
 
 Uranus: {
-  Rotation: 
+  Rotation: 4s,
   Translation: 1008.2s
 }
 
 
 Neptune: {
-  Rotation: 
+  Rotation: 30s,
   Translation: 1977.49s
 }
 
 
 Pluto: {
-  Rotation: 
+  Rotation: 2,
   Translation: 2880s
 }
 
