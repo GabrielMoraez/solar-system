@@ -70,14 +70,12 @@ body {
 
 #sun {
   background-color: #FB7209;
-  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4);
   z-index: 1;
   font-size: 24em;
   background-repeat: no-repeat;
   background-size: cover;
   transform: rotateX(-75deg);
-  box-shadow: 0px 0px 43px 5px #E48603;
-  filter: brightness(180%);
+  animation: sunshine 5s infinite linear, sunrays 5s infinite linear, self-rotation 300s infinite linear;
 }
 
 #sun, .planet {
@@ -90,6 +88,19 @@ body {
   margin-left: -0.5em;
   border-radius: 50%;
   transform-style: preserve-3d;
+}
+
+
+@keyframes sunshine {
+  0%   { filter: brightness(150%); }
+  50% { filter: brightness(180%); }
+  100% { filter: brightness(150%); }
+}
+
+@keyframes sunrays {
+  0%   { box-shadow: 0px 0px 100px 5px rgba(228, 134, 3, 0.8); }
+  50%  { box-shadow: 0px 0px 100px 7px rgba(228, 134, 3, 0.9); }
+  100% { box-shadow: 0px 0px 100px 5px rgba(228, 134, 3, 0.8); }
 }
 
 
@@ -410,32 +421,32 @@ body {
 
 @keyframes shadow-earth {
   0% {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* RIGHT */
   }
 
   25% {
-    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* TOP */
   }
 
   50% {
-    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* LEFT */
   }
 
   75% {
-    box-shadow: inset 24px -20px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: inset 24px -20px 15px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* BOTTOM */
   }
 
   75.01% {
-    box-shadow: inset -24px -20px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: inset -24px -20px 15px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* BOTTOM */
   }
 
   100% {
-    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8);
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.8), 0px 0px 10px 3px rgba(75, 169, 200, 0.437);
     /* RIGHT */
   }
 }
@@ -706,10 +717,10 @@ body {
 /* Self-Rotation */
 @keyframes self-rotation {
   0%{
-    background-position-x:0;
+    background-position-y:0;
   }
   100%{
-    background-position-x:-5em;
+    background-position-x:5em;
   }
 }
 
@@ -779,6 +790,7 @@ body {
 
 #sun {
   background-image: url('../img/sun.jpg');
+  background-repeat: repeat-x;
 }
 
 #mercury .planet {
